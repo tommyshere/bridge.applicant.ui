@@ -1,19 +1,17 @@
 FROM node:alpine as builder
 
-RUN apk update && apk add --no-cache make git
+WORKDIR '/app'
 
-WORKDIR /app
-
-COPY package.json ./
+COPY package.json .
 
 RUN npm install
 
 COPY . .
 
-RUN npm run prod
+RUN npm run build
 
-FROM nginx:alpine
+FROM nginx
 
 EXPOSE 80
 
-COPY --from=builder /app/dist /usr/share/nginx/html
+COPY --from=builder /app/dist/bridge-applicant-ui /usr/share/nginx/html
