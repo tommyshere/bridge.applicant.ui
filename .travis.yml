@@ -1,0 +1,15 @@
+language: generic
+sudo: required
+services:
+    - docker
+    deploy:
+        provider: elasticbeanstalk
+        region: "us-east-2"
+        app: bridge-applicant
+        env: BridgeApplicant-env
+        bucket_name: elasticbeanstalk-us-east-2-305454269050
+        bucket_path: bridge-applicant-ui
+        on:
+            branch: master
+        access_key_id: $AWS_ACCESS_KEY
+        secret_access_key: $AWS_SECRET_KEY
