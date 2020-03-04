@@ -4,13 +4,11 @@ RUN apk update && apk add --no-cache make git
 
 WORKDIR /app
 
-COPY package.json package-lock.json  /app/
-
-RUN npm install -g @angular/cli@9.0.4
+COPY package.json package-lock.json  ./
 
 RUN npm install
 
-COPY . /app
+COPY . .
 
 RUN npm run prod
 
@@ -18,4 +16,4 @@ FROM nginx:alpine
 
 EXPOSE 80
 
-COPY --from=builder /app/dist /usr/share/nginx/html
+COPY --from=builder /app/dist/bridge-applicant-ui /usr/share/nginx/html
