@@ -4,7 +4,7 @@ RUN apk update && apk add --no-cache make git
 
 WORKDIR /app
 
-COPY package.json package-lock.json  ./
+COPY package.json ./
 
 RUN npm install
 
@@ -16,4 +16,4 @@ FROM nginx:alpine
 
 EXPOSE 80
 
-COPY --from=builder /app/dist/bridge-applicant-ui /usr/share/nginx/html
+COPY --from=builder /app/dist /usr/share/nginx/html
