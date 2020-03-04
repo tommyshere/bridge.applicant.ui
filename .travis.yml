@@ -14,10 +14,10 @@ script:
 deploy:
     provider: elasticbeanstalk
     region: "us-east-2"
-    app: bridge-applicant
-    env: BridgeApplicant-env
+    app: bridge-ui
+    env: BridgeUi-env
     bucket_name: elasticbeanstalk-us-east-2-305454269050
-    bucket_path: bridge-applicant-ui
+    bucket_path: bridge-ui
     on:
         branch: master
     access_key_id: $AWS_ACCESS_KEY
