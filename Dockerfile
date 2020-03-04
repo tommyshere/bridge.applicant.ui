@@ -2,13 +2,13 @@ FROM node:alpine as builder
 
 RUN apk update && apk add --no-cache make git
 
-WORKDIR '/app'
+WORKDIR /app
 
 COPY package.json ./
 
 RUN npm install
 
-COPY . .
+COPY . /app
 
 RUN npm run prod
 
