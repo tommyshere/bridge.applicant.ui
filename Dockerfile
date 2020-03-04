@@ -16,4 +16,4 @@ FROM nginx:alpine
 
 EXPOSE 80
 
-COPY --from=builder /dist/bridge-applicant-ui /usr/share/nginx/html
+COPY --from=builder /app/dist/bridge-applicant-ui /usr/share/nginx/html
