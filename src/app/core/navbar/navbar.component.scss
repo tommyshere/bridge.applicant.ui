@@ -1,0 +1,19 @@
+@import "assets/sass/colors.scss";
+
+.mat-toolbar-row {
+  display: inline-flex;
+  width: 100%;
+  background: white;
+  vertical-align: middle;
+  padding: 25px 20px;
+  margin-bottom: 25px;
+}
+
+.title-link {
+  color: map-get($primary, 500);
+  font-size: 26px;
+
+  .logo {
+    font-size: 20px;
+  }
+}
