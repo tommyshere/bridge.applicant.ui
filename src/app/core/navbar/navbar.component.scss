@@ -1,0 +1,36 @@
+@import "assets/sass/colors.scss";
+
+.mat-toolbar-row {
+  display: inline-flex;
+  width: 100%;
+  background: white;
+  vertical-align: middle;
+  padding: 25px 20px;
+}
+
+// button:focus {
+//   outline: none;
+// }
+
+.title-link {
+  color: map-get($primary, 500);
+  font-size: 26px;
+
+  .logo {
+    font-size: 20px;
+  }
+}
+
+// .title-link:hover {
+//   text-decoration: none;
+// }
+
+// .logo-title {
+//   color: map-get($primary, 500);
+//   margin-left: 5px;
+
+//   .logo {
+//     margin-right: 5px;
+//     line-height: inherit;
+//   }
+// }
