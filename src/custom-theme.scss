@@ -14,13 +14,19 @@
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 $bridge-applicant-ui-primary: mat-palette($primary);
+
+$bridge-applicant-ui-warn: mat-palette($warn);
+
+$bridge-applicant-ui-danger: mat-palette($danger);
+
 $bridge-applicant-ui-accent: mat-palette($warn, A200, A100, A400);
 
-// The warn palette is optional (defaults to red).
-$bridge-applicant-ui-warn: mat-palette($danger);
-
 // Create the theme object (a Sass map containing all of the palettes).
-$bridge-applicant-ui-theme: mat-light-theme($bridge-applicant-ui-primary, $bridge-applicant-ui-accent, $bridge-applicant-ui-warn);
+$bridge-applicant-ui-theme: mat-light-theme(
+  $bridge-applicant-ui-primary,
+  $bridge-applicant-ui-warn,
+  $bridge-applicant-ui-danger
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
