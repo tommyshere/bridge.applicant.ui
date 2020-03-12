@@ -1,0 +1,28 @@
+.apply-card {
+  text-align: center;
+
+  .mat-card-title {
+  	font-size: 46px;
+  	margin-top: 5px;
+  }
+
+  .mat-card-content {
+  	margin-top: 30px;
+
+  	.picture-row {
+  		margin-bottom: 20px;
+  	}
+
+  	.job-title {
+  		font-size: 20px;
+  	}
+
+  	.job-description {
+  		margin-top: 10px;
+    }
+    
+    .button-row {
+      margin-top: 15px;
+    }
+  }
+}
