@@ -3,14 +3,14 @@
 .mat-toolbar-row {
   display: inline-flex;
   width: 100%;
-  background: white;
+  background: map-get($primary, 500);
   vertical-align: middle;
   padding: 25px 20px;
   margin-bottom: 25px;
 }
 
 .title-link {
-  color: map-get($primary, 500);
+  color: white;
   font-size: 26px;
 
   .logo {
