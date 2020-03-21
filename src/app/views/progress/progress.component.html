@@ -1,5 +1,5 @@
 <div class="main-content">
   <div class="container-fluid">
-    <app-progress-card></app-progress-card>
+    <app-progress-card *ngFor="let appliedJob of appliedJobs" [appliedJob]="appliedJob"></app-progress-card>
   </div>
 </div>

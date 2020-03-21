@@ -1,6 +1,6 @@
 import { AppliedJob } from 'app/class/applied-job';
 
-export const fakeProgress: AppliedJob[] = [
+export const fakeAppliedJobs: AppliedJob[] = [
   {
     title: 'Software Engineer I',
     company: 'Google',
