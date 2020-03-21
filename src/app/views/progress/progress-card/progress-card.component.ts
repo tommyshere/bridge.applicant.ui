@@ -7,7 +7,7 @@ import * as ProgressBar from 'progressbar.js';
   styleUrls: ['./progress-card.component.scss']
 })
 export class ProgressCardComponent implements OnInit {
-  progressBar;
+  progressBar: ProgressBar;
 
   constructor() { }
 
