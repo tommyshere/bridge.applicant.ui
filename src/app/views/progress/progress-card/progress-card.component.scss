@@ -1,3 +1,27 @@
+@import 'assets/sass/colors.scss';
+
+.col-xl-4 {
+  margin-bottom: 15px;
+}
+
 .progress-card {
   width: 400px;
+
+  ::ng-deep .mat-card-header-text {
+    margin: 0;
+  }
+
+  .footer-row {
+    margin-left: 0;
+    margin-right: 0;
+    color: $light-gray;
+  
+    .updated {
+      text-align: right;
+    }
+  }
+  
+  .bottom-footer {
+    margin-bottom: 10px;
+  }
 }

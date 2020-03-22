@@ -1,5 +1,11 @@
 <div class="main-content">
   <div class="container-fluid">
-    <app-progress-card *ngFor="let appliedJob of appliedJobs" [appliedJob]="appliedJob"></app-progress-card>
+    <div class="row">
+      <app-progress-card 
+        *ngFor="let appliedJob of appliedJobs; let i = index" 
+        [appliedJob]="appliedJob"
+        [index]="i">
+      </app-progress-card>
+    </div>
   </div>
 </div>

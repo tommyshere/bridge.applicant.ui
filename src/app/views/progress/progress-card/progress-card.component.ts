@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input, AfterViewInit } from '@angular/core';
 import * as ProgressBar from 'progressbar.js';
 import { AppliedJob } from 'app/class/applied-job';
 
@@ -7,30 +7,33 @@ import { AppliedJob } from 'app/class/applied-job';
   templateUrl: './progress-card.component.html',
   styleUrls: ['./progress-card.component.scss']
 })
-export class ProgressCardComponent implements OnInit {
+export class ProgressCardComponent implements AfterViewInit {
   @Input() appliedJob: AppliedJob;
+  @Input() index: number;
   progressBar: ProgressBar;
 
   constructor() { }
 
-  ngOnInit() {
+  ngAfterViewInit() {
     this.drawBar();
   }
 
   private drawBar() {
-    this.progressBar = new ProgressBar.Line('.progress-container', {
+    this.progressBar = new ProgressBar.Line('.progress-container-' + this.index, {
       strokeWidth: 4,
       easing: 'easeInOut',
-      color: '#FFEA82',
+      color: this._setColor(this.appliedJob.progress),
       trailColor: '#eee',
       trailWidth: 1,
       text: {
-        value: this._setText(this.appliedJob.progress)
+        value: this._setText(this.appliedJob.progress),
+        style: {
+          color: 'black',
+          margin: '0 40%'
+        },
+        aligntoBottom: true
       }
-    }).animate(
-      // TODO: Can't have -1
-      this.appliedJob.progress
-      );
+    }).animate(this.appliedJob.progress > 0 ? this.appliedJob.progress : 0);
   }
 
   private _setText(progress: -1 | 0 | 0.25 | 0.50 | 0.75 | 1): string {
@@ -42,7 +45,7 @@ export class ProgressCardComponent implements OnInit {
         return 'Applied';
       }
       case 0.25: {
-        return 'Reviwed';
+        return 'Reviewed';
       }
       case 0.50: {
         return 'Contacted';
@@ -59,29 +62,29 @@ export class ProgressCardComponent implements OnInit {
     }
   }
 
-  // TODO: Colors
+
   private _setColor(progress: -1 | 0 | 0.25 | 0.50 | 0.75 | 1): string {
     switch (progress) {
       case -1: {
-        return 'Denied';
+        return '#eee';
       }
       case 0: {
-        return 'Applied';
+        return '#eee';
       }
       case 0.25: {
-        return 'Reviwed';
+        return '#1F9497';
       }
       case 0.50: {
-        return 'Contacted';
+        return '#C2DDB1';
       }
       case 0.75: {
-        return 'Interviewing';
+        return '#017741';
       }
       case 1: {
-        return 'Hired';
+        return '#5D6BB0';
       }
       default: {
-        return 'N/A';
+        return '#eee';
       }
     }
   }

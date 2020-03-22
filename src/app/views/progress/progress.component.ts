@@ -19,5 +19,4 @@ export class ProgressComponent implements OnInit {
       this.appliedJobs = data;
     });
   }
-
 }

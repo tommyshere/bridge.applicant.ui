@@ -25,7 +25,7 @@ export const fakeAppliedJobs: AppliedJob[] = [
   {
     title: 'DevOps Engineer',
     company: 'Nvidia',
-    progress: 0.50,
+    progress: 0.25,
     dateApplied: new Date(),
     dateUpdated: new Date(),
   },
@@ -39,7 +39,14 @@ export const fakeAppliedJobs: AppliedJob[] = [
   {
     title: 'Data Engineer',
     company: 'Facebook',
-    progress: 0.50,
+    progress: 1,
+    dateApplied: new Date(),
+    dateUpdated: new Date(),
+  },
+  {
+    title: 'Senior Backend Engineer',
+    company: 'Netflix',
+    progress: 0,
     dateApplied: new Date(),
     dateUpdated: new Date(),
   },
