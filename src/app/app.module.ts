@@ -9,10 +9,11 @@ import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './views/home/home.module';
 import { ApplyModule } from './views/apply/apply.module';
+import { ProgressModule } from './views/progress/progress.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,7 +24,8 @@ import { ApplyModule } from './views/apply/apply.module';
     CoreModule,
     SharedModule,
     HomeModule,
-    ApplyModule
+    ApplyModule,
+    ProgressModule
   ],
   bootstrap: [
     AppComponent

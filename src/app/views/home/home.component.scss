@@ -1,22 +1,48 @@
+@import 'assets/sass/colors.scss';
+
 .row {
   margin-bottom: 25px;
+  color: map-get($primary, 500);
+}
+
+.title-row {
+  font-size: 42px;
 }
 
 .col-xl-12 {
-  color: white;
-  font-size: 32px;
   text-align: center;
 }
 
+.mission-row, .link-row {
+  margin-top: 8%;
+}
+
 .mission-row {
-  margin-top: 15px;
+  text-align: center;
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 38px;
+    font-weight: 400;
+  }
 }
 
-.apply-link {
-  color: white;
-  text-decoration: underline;
-}
+.link-row {
+  font-size: 38px;
 
-.apply-link:hover {
-  color: black;
+  .apply-link {
+    margin-right: 2%;
+  }
+
+  .apply-link, .progress-link {
+    color: map-get($primary, 500);
+    text-decoration: underline;
+  }
+
+  .apply-link:hover, .progress-link:hover {
+    color: black;
+  }
 }

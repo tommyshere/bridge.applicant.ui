@@ -1,5 +1,5 @@
-@import "custom-theme.scss";
-@import "assets/sass/cards.scss";
+@import 'custom-theme.scss';
+@import 'assets/sass/cards.scss';
 
 html, body { 
   height: 100%;
@@ -10,5 +10,5 @@ body {
 }
 
 .mat-app-background {
-  background-color: map-get($primary, 500);
+  background-color: white;
 }
