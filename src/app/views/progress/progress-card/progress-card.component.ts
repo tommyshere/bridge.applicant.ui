@@ -29,11 +29,18 @@ export class ProgressCardComponent implements AfterViewInit {
         value: this._setText(this.appliedJob.progress),
         style: {
           color: 'black',
-          margin: '0 40%'
+          margin: this._setMargins(this.appliedJob.progress)
         },
         aligntoBottom: true
       }
-    }).animate(this.appliedJob.progress > 0 ? this.appliedJob.progress : 0);
+    }).animate(this.appliedJob.progress >= 0 ? this.appliedJob.progress : 1);
+  }
+
+  private _setMargins(progress: -1 | 0 | 0.25 | 0.50 | 0.75 | 1): string {
+    if (progress > 0 && progress < 1) {
+      return '0 40%';
+    }
+    return '0 45%';
   }
 
   private _setText(progress: -1 | 0 | 0.25 | 0.50 | 0.75 | 1): string {
@@ -66,7 +73,7 @@ export class ProgressCardComponent implements AfterViewInit {
   private _setColor(progress: -1 | 0 | 0.25 | 0.50 | 0.75 | 1): string {
     switch (progress) {
       case -1: {
-        return '#eee';
+        return '#de3130';
       }
       case 0: {
         return '#eee';

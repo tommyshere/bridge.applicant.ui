@@ -50,4 +50,11 @@ export const fakeAppliedJobs: AppliedJob[] = [
     dateApplied: new Date(),
     dateUpdated: new Date(),
   },
+  {
+    title: 'Project Manager',
+    company: 'American Airlines',
+    progress: -1,
+    dateApplied: new Date(),
+    dateUpdated: new Date(),
+  },
 ];
