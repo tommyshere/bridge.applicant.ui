@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProgressService } from './progress.service';
-import { AppliedJob } from 'app/class/applied-job';
+import { AppliedJob } from 'app/class';
 
 @Component({
   selector: 'app-progress',

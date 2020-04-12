@@ -1,4 +1,4 @@
-import { AppliedJob } from 'app/class/applied-job';
+import { AppliedJob } from 'app/class';
 
 export const fakeAppliedJobs: AppliedJob[] = [
   {
