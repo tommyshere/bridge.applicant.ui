@@ -1,5 +1,8 @@
 <div class="main-content">
   <div class="container-fluid">
+    <div class="row filter-row">
+      <app-filters></app-filters>
+    </div>
     <div class="row">
       <app-progress-card 
         *ngFor="let appliedJob of appliedJobs; let i = index" 
