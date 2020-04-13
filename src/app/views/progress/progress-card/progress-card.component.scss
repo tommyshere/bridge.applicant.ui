@@ -11,6 +11,14 @@
     margin: 0;
   }
 
+  .mat-card-title {
+    cursor: pointer;
+  }
+
+  .mat-card-title:hover {
+    text-decoration: underline;
+  }
+
   .footer-row {
     margin-left: 0;
     margin-right: 0;
