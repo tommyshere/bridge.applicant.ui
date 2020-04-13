@@ -13,18 +13,20 @@
     </div>
     <div class="row job-description">
       <div class="col-xl-12">
-        {{ job.description }} <span class="see-more">See More</span>
+        {{ job.description }} <span (click)="openJobDesc()" class="see-more">See More</span>
       </div>
     </div>
     <div class="row button-row">
-      <div class="col-xl-4 decline">
-        <button mat-raised-button color="warn">Decline</button>
+      <div class="col-xl-4 apply">
+        <button mat-raised-button color="primary">Apply</button>
       </div>
+      
       <div class="col-xl-4 save">
         <button mat-raised-button color="danger">Save</button>
       </div>
-      <div class="col-xl-4 apply">
-        <button mat-raised-button color="primary">Apply</button>
+      
+      <div class="col-xl-4 decline">
+        <button mat-raised-button color="warn">Decline</button>
       </div>
     </div>
   </mat-card-content>
