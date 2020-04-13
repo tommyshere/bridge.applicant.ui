@@ -1,7 +1,9 @@
 <div class="main-content">
   <div class="container-fluid">
     <div class="row filter-row">
-      <app-filters></app-filters>
+      <app-filters
+        (dateCategory)="changeFilter($event)">
+      </app-filters>
     </div>
     <div class="row">
       <app-progress-card 

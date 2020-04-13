@@ -10,6 +10,7 @@ import { Subscription } from 'rxjs';
 })
 export class ProgressComponent implements OnInit, OnDestroy {
   public appliedJobs: AppliedJob[];
+  public dateCategory: string;
   private _rx: Subscription;
 
   constructor(
@@ -24,5 +25,9 @@ export class ProgressComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this._rx.unsubscribe();
+  }
+
+  public changeFilter(data) {
+    console.log(data.value);
   }
 }
