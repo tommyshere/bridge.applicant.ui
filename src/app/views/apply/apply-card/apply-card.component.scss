@@ -18,7 +18,16 @@
   	}
 
   	.job-description {
-  		margin-top: 10px;
+      margin-top: 10px;
+      
+      .see-more {
+        color: blue;
+        cursor: pointer;
+      }
+
+      .see-more:hover {
+        text-decoration: underline;
+      }
     }
     
     .button-row {
