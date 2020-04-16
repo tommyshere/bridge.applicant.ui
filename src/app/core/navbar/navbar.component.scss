@@ -6,14 +6,19 @@
   background: map-get($primary, 500);
   vertical-align: middle;
   padding: 25px 20px;
-  margin-bottom: 25px;
 }
 
 .title-link {
   color: white;
   font-size: 26px;
+  margin-top: 0.3rem;
 
   .logo {
     font-size: 20px;
   }
+}
+
+app-user-profile {
+  margin-top: -0.3%;
+  margin-left: auto;
 }

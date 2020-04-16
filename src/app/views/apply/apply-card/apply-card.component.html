@@ -1,0 +1,33 @@
+<mat-card class="apply-card">
+  <mat-card-title>Google</mat-card-title>
+  <mat-card-content>
+    <div class="row picture-row">
+      <div class="offset-xl-2 col-xl-8">
+        <img class="logo" src="assets/logos/google-logo.png">
+      </div>
+    </div>
+    <div class="row job-title">
+      <div class="col-xl-12">
+        {{ job.title }}
+      </div>
+    </div>
+    <div class="row job-description">
+      <div class="col-xl-12">
+        {{ job.description }} <span (click)="openJobDesc()" class="see-more">See More</span>
+      </div>
+    </div>
+    <div class="row button-row">
+      <div class="col-xl-4 apply">
+        <button mat-raised-button color="primary">Apply</button>
+      </div>
+      
+      <div class="col-xl-4 save">
+        <button mat-raised-button color="danger">Save</button>
+      </div>
+      
+      <div class="col-xl-4 decline">
+        <button mat-raised-button color="warn">Decline</button>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

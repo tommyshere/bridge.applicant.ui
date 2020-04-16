@@ -1,0 +1,15 @@
+<div class="title">
+  <h2 mat-dialog-title class="job-title"> {{ job.title }} - {{ job.company }} </h2>
+  <button mat-icon-button class="close-button" mat-dialog-close>
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
+<div mat-dialog-content [innerHtml]="job.description">
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button color="primary">Apply</button>
+
+  <button mat-raised-button color="danger">Save</button>
+
+  <button mat-raised-button color="warn">Decline</button>
+</div>

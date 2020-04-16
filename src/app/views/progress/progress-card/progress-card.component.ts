@@ -1,6 +1,6 @@
 import { Component, Input, AfterViewInit } from '@angular/core';
 import * as ProgressBar from 'progressbar.js';
-import { AppliedJob } from 'app/class/applied-job';
+import { AppliedJob } from 'app/class';
 
 @Component({
   selector: 'app-progress-card',
