@@ -1,0 +1,19 @@
+@import 'assets/sass/colors.scss';
+
+.mat-form-field {
+  width: 100%;
+}
+
+.mat-button-toggle-checked {
+  background-color: map-get($primary, 500);
+  color: white;
+}
+
+.stepper-buttons {
+  display: flex;
+  margin-top: 1rem;
+
+  .next-button {
+    margin-left: auto;
+  }
+}
