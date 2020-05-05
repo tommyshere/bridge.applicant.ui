@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'apply', component: ApplyComponent },
   { path: 'progress', component: ProgressComponent },
-  { path: 'filter', component: TailorComponent }
+  { path: 'tailor', component: TailorComponent }
 ];
 
 @NgModule({

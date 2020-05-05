@@ -1,7 +1,10 @@
 <div class="main-content">
   <div class="container-fluid">
     <div class="row">
-      <div class="offset-xl-4 col-xl-4">
+      <div class="col-xl-4">
+        <app-filter-panel></app-filter-panel>
+      </div>
+      <div class="col-xl-4">
         <app-apply-card *ngFor="let job of jobs" [job]="job">
         </app-apply-card>
       </div>
