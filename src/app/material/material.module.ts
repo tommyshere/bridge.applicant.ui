@@ -7,7 +7,10 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDialogModule } from '@angular/material/dialog';
-
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 @NgModule({
   imports: [
@@ -18,7 +21,11 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatExpansionModule,
     MatRadioModule,
     MatSelectModule,
-    MatDialogModule
+    MatDialogModule,
+    MatStepperModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonToggleModule
   ],
   exports: [
     MatIconModule,
@@ -28,7 +35,11 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatExpansionModule,
     MatRadioModule,
     MatSelectModule,
-    MatDialogModule
+    MatDialogModule,
+    MatStepperModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonToggleModule
   ]
 })
 export class MaterialModule { }

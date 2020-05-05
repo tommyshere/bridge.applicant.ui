@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../material/material.module';
 import { RouterModule } from '@angular/router';
 import { ExpandJobViewDialogComponent } from './expand-job-view-dialog/expand-job-view-dialog.component';
@@ -12,12 +13,16 @@ import { ExpandJobViewDialogComponent } from './expand-job-view-dialog/expand-jo
   ],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   exports: [
     CommonModule,
     MaterialModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule,
   ]
 })
 export class SharedModule { }

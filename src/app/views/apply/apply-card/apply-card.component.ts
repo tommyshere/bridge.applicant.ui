@@ -1,7 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Job } from 'app/class';
-import { MatDialog } from '@angular/material/dialog';
-import { ExpandJobViewDialogComponent } from 'app/shared/expand-job-view-dialog/expand-job-view-dialog.component';
 
 @Component({
   selector: 'app-apply-card',
@@ -10,21 +8,28 @@ import { ExpandJobViewDialogComponent } from 'app/shared/expand-job-view-dialog/
 })
 export class ApplyCardComponent implements OnInit {
   @Input() public job: Job;
+  @Output() public seeMore = new EventEmitter<Job>();
+  @Output() public hideDetailed = new EventEmitter<boolean>();
 
-  constructor(
-    private dialog: MatDialog
-  ) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  public openJobDesc() {
-    this.dialog.open(ExpandJobViewDialogComponent, {
-      width: '60%',
-      data: {
-        job: this.job
-      }
-    });
+  public applyJob(): void {
+    this.hideDetailed.emit();
+  }
+
+  public saveJob(): void {
+    this.hideDetailed.emit();
+  }
+
+  public declineJob(): void {
+    this.hideDetailed.emit();
+  }
+
+  public openJobDesc(): void {
+    this.seeMore.emit(this.job);
   }
 
 }

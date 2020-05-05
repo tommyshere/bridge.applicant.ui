@@ -1,0 +1,45 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="offset-xl-3 col-xl-6">
+        <form [formGroup]="filterFormGroup">
+          <mat-vertical-stepper #stepper>
+
+            <mat-step>
+              <ng-template matStepLabel>Job Title</ng-template>
+              <mat-form-field>
+                <mat-label>What Job Are You Looking For?</mat-label>
+                <input matInput formControlName="jobTitle" />
+              </mat-form-field>
+
+              <mat-button-toggle-group multiple="true">
+                <mat-button-toggle value="entry">Entry</mat-button-toggle>
+                <mat-button-toggle value="mid">Mid</mat-button-toggle>
+                <mat-button-toggle value="senior">Senior</mat-button-toggle>
+              </mat-button-toggle-group>
+
+              <div class="stepper-buttons">
+                <button mat-raised-button matStepperNext class="next-button">Next</button>
+              </div>
+              
+            </mat-step>
+
+            <mat-step>
+              <ng-template matStepLabel>Location</ng-template>
+              <mat-form-field>
+                <mat-label>Where Would You Like to Work?</mat-label>
+                <input matInput formControlName="location" />
+              </mat-form-field>
+
+              <div class="stepper-buttons">
+                <button mat-raised-button matStepperPrevious class="back-button">Back</button>
+                <button mat-raised-button matStepperNext class="next-button">Next</button>
+              </div>
+            </mat-step>
+            
+          </mat-vertical-stepper>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
