@@ -11,6 +11,8 @@ import { Job } from 'app/class';
 export class ApplyComponent implements OnInit, OnDestroy {
   private _rx: Subscription;
   public jobs: Job[];
+  public detailedJob: Job;
+  public showMoreCard = false;
 
   constructor(
     private jobService: OpenJobService
@@ -20,6 +22,15 @@ export class ApplyComponent implements OnInit, OnDestroy {
     this._rx = this.jobService.getOpenJobs().subscribe(data => {
       this.jobs = data;
     });
+  }
+
+  public showMore(job: Job): void {
+    this.showMoreCard = true;
+    this.detailedJob = job;
+  }
+
+  public hideDetailed(): void {
+    this.showMoreCard = false;
   }
 
   ngOnDestroy(): void {

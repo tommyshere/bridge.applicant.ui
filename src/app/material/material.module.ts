@@ -25,7 +25,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     MatStepperModule,
     MatInputModule,
     MatFormFieldModule,
-    MatButtonToggleModule,
+    MatButtonToggleModule
   ],
   exports: [
     MatIconModule,
@@ -39,7 +39,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
     MatStepperModule,
     MatInputModule,
     MatFormFieldModule,
-    MatButtonToggleModule,
+    MatButtonToggleModule
   ]
 })
 export class MaterialModule { }

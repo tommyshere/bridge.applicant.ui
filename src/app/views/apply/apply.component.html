@@ -5,8 +5,18 @@
         <app-filter-panel></app-filter-panel>
       </div>
       <div class="col-xl-4">
-        <app-apply-card *ngFor="let job of jobs" [job]="job">
+        <app-apply-card 
+          *ngFor="let job of jobs" 
+          [job]="job"
+          (seeMore)="showMore($event)"
+          (hideDetailed)="hideDetailed()">
         </app-apply-card>
+      </div>
+      <div class="col-xl-4">
+        <app-see-more-card
+          *ngIf="showMoreCard"
+          [job]="detailedJob">
+        </app-see-more-card>
       </div>
     </div>
   </div>

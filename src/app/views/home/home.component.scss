@@ -34,11 +34,11 @@
 .link-row {
   font-size: 38px;
 
-  .apply-link {
+  .apply-link, .progress-link {
     margin-right: 2%;
   }
 
-  .apply-link, .progress-link {
+  .apply-link, .progress-link, .tailor-link {
     color: map-get($primary, 500);
     text-decoration: underline;
   }
