@@ -10,10 +10,19 @@
 }
 
 .mission-row {
-  margin-top: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background: $off-white-gray;
+  text-align: center;
 
-  .our-mission {
-    margin-top: calc(100%/3);
+  .mission-title {
+    margin-top: 38%;
+    font-size: 3rem;
+  }
+
+  .mission-value {
+    font-size: 38px;
+    font-weight: 400;
   }
 
   img {
@@ -22,18 +31,17 @@
   }
 }
 
-.mission-row {
-  text-align: center;
-
-  h1 {
-    font-size: 42px;
+.services-row {
+  .why-title {
+    font-size: 3rem;
+    text-align: center;
   }
 
-  h2 {
-    font-size: 38px;
-    font-weight: 400;
+  .why-col {
+    
   }
 }
+  
 
 .link-row {
   font-size: 38px;
