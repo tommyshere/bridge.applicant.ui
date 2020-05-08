@@ -1,7 +1,19 @@
 .main-content {
 	margin-top: 2rem;
 
-	app-filter-panel {
-		width: 100%;
+	.left-col, .right-col {
+		flex: 0 0 18.75%;
+		max-width: 18.75%;
+		-ms-flex: 0 0 18.75%;
 	}
+
+	.left-col {
+		margin-left: 18.75%;
+
+		app-filter-panel {
+			width: 100%;
+		}
+	}
+
+	
 }

@@ -3,9 +3,9 @@
 .mat-toolbar-row {
   display: inline-flex;
   width: 100%;
-  background: map-get($primary, 500);
+  background: map-get($primary, 400);
   vertical-align: middle;
-  padding: 25px 20px;
+  padding: 1.5rem 5.5rem;
 }
 
 .title-link {
