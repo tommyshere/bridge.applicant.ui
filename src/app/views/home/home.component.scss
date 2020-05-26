@@ -36,26 +36,57 @@
     font-size: 3rem;
     text-align: center;
   }
+}
 
-  .why-col {
-    
+.offset-125 {
+  margin-left: 12.5%;
+}
+
+.why-col {
+  text-align: center;
+
+  mat-icon {
+    margin-left: -4%;
+    font-size: 48px;
+  }
+
+  .text-col {
+    font-size: 20px;
   }
 }
+
+.sign-up-row {
+  text-align: center;
+
+  button {
+    padding: 2% 6%;
+    font-size: 30px;
+  }
+}
+
+.team-row {
+  background: $off-white-gray;
+  margin-bottom: 0px;
+
+  .team-title {
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .profile-col {
+    text-align: center;
+
+    .profile-pic {
+      margin-top: 2rem;
+      font-size: 12rem;
+      margin-left: -30%;
+    }  
+  }
   
-
-.link-row {
-  font-size: 38px;
-
-  .apply-link, .progress-link {
-    margin-right: 2%;
-  }
-
-  .apply-link, .progress-link, .tailor-link {
-    color: map-get($primary, 500);
-    text-decoration: underline;
-  }
-
-  .apply-link:hover, .progress-link:hover {
-    color: black;
+  .profile-desc {
+    line-height: 28px;
+    margin-top: 2rem;
+    font-size: 30px;
   }
 }
