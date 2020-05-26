@@ -5,45 +5,88 @@
   color: map-get($primary, 500);
 }
 
-.title-row {
-  margin-top: 25px;
-  font-size: 42px;
-}
-
 .col-xl-12 {
   text-align: center;
 }
 
-.mission-row, .link-row {
-  margin-top: 8%;
-}
-
 .mission-row {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background: $off-white-gray;
   text-align: center;
 
-  h1 {
-    font-size: 42px;
+  .mission-title {
+    margin-top: 38%;
+    font-size: 3rem;
   }
 
-  h2 {
+  .mission-value {
     font-size: 38px;
     font-weight: 400;
   }
+
+  img {
+    max-width: 70%;
+    height: auto;
+  }
 }
 
-.link-row {
-  font-size: 38px;
+.services-row {
+  .why-title {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
 
-  .apply-link, .progress-link {
-    margin-right: 2%;
+.offset-125 {
+  margin-left: 12.5%;
+}
+
+.why-col {
+  text-align: center;
+
+  mat-icon {
+    margin-left: -4%;
+    font-size: 48px;
   }
 
-  .apply-link, .progress-link, .tailor-link {
-    color: map-get($primary, 500);
-    text-decoration: underline;
+  .text-col {
+    font-size: 20px;
+  }
+}
+
+.sign-up-row {
+  text-align: center;
+
+  button {
+    padding: 2% 6%;
+    font-size: 30px;
+  }
+}
+
+.team-row {
+  background: $off-white-gray;
+  margin-bottom: 0px;
+
+  .team-title {
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
   }
 
-  .apply-link:hover, .progress-link:hover {
-    color: black;
+  .profile-col {
+    text-align: center;
+
+    .profile-pic {
+      margin-top: 2rem;
+      font-size: 12rem;
+      margin-left: -30%;
+    }  
+  }
+  
+  .profile-desc {
+    line-height: 28px;
+    margin-top: 2rem;
+    font-size: 30px;
   }
 }
