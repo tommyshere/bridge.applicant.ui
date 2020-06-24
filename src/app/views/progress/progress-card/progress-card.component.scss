@@ -24,6 +24,12 @@
     font-size: 18px;
   }
 
+  .status-col {
+    padding: 0;
+    margin: 0.5rem 0;
+    font-size: 18px;
+  }
+
   .logo {
     height: 150px;
     width: 165px;
@@ -38,8 +44,16 @@
     margin-right: 0;
     color: $light-gray;
   
-    .updated {
+    .view-more {
       text-align: right;
+      padding: 0;
+
+      button {
+        background: $off-white-gray;
+        border-radius: 0;
+        border-bottom: none;
+        border-right: none;
+      }
     }
   }
   

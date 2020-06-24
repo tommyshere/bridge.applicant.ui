@@ -16,25 +16,25 @@
       <div class="col-xl-12 title-col">
         {{ appliedJob.title }}
       </div>
+      <div class="col-xl-12 status-col">
+        {{ statusText }}
+      </div>
       <div class="progress-container-{{index}}"></div>
     </mat-card-content>
     <mat-card-footer>
       <div class="row footer-row">
-        <div class="col-xl-6">
-          Applied: 
-        </div>
-        <div class="col-xl-6 updated">
-          Updated:
+        <div class="offset-xl-6 col-xl-6 view-more">
+          <button mat-stroked-button>View More ></button>
         </div>
       </div>
-      <div class="row footer-row bottom-footer">
+      <!-- <div class="row footer-row bottom-footer">
         <div class="col-xl-6">
           {{ appliedJob.dateApplied | date: 'MM/dd/yyyy' }}
         </div>
         <div class="col-xl-6 updated">
           {{ appliedJob.dateUpdated | date: 'MM/dd/yyyy' }}
         </div>
-      </div>
+      </div> -->
     </mat-card-footer>
   </mat-card>
 </div>
