@@ -1,5 +1,10 @@
 @import 'assets/sass/colors.scss';
 
+.home-button {
+  padding: 2% 6%;
+  font-size: 30px;
+}
+
 .row {
   margin-bottom: 25px;
   color: map-get($primary, 500);
@@ -57,11 +62,6 @@
 
 .sign-up-row {
   text-align: center;
-
-  button {
-    padding: 2% 6%;
-    font-size: 30px;
-  }
 }
 
 .team-row {
