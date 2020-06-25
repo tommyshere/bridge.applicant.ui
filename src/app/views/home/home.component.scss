@@ -10,10 +10,6 @@
   color: map-get($primary, 500);
 }
 
-.col-xl-12 {
-  text-align: center;
-}
-
 .mission-row {
   padding-top: 1%;
   padding-bottom: 1%;
@@ -43,50 +39,6 @@
   }
 }
 
-.offset-125 {
-  margin-left: 12.5%;
-}
-
-.why-col {
+.example-row {
   text-align: center;
-
-  mat-icon {
-    margin-left: -4%;
-    font-size: 48px;
-  }
-
-  .text-col {
-    font-size: 20px;
-  }
-}
-
-.sign-up-row {
-  text-align: center;
-}
-
-.team-row {
-  background: $off-white-gray;
-  margin-bottom: 0px;
-
-  .team-title {
-    margin-top: 2rem;
-    font-size: 3rem;
-    text-align: center;
-  }
-
-  .profile-col {
-    text-align: center;
-
-    .profile-pic {
-      margin-top: 2rem;
-      font-size: 12rem;
-      margin-left: -30%;
-    }  
-  }
-  
-  .profile-desc {
-    line-height: 28px;
-    margin-top: 2rem;
-    font-size: 30px;
-  }
 }

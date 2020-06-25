@@ -1,3 +1,5 @@
+@import 'assets/sass/colors.scss';
+
 .apply-card {
   text-align: center;
 
@@ -18,8 +20,13 @@
   	}
 
   	.job-description {
-      margin-top: 10px;
+      margin: 0.75rem 0;
+      border: 1px solid $border-gray;
       
+      p {
+        margin: 0;
+      }
+
       .see-more {
         color: blue;
         cursor: pointer;
