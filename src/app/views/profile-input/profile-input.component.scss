@@ -6,3 +6,34 @@
   font-size: 15rem;
   margin-left: 37.5%;
 }
+
+.mat-form-field {
+  width: 100%;
+}
+
+.education-col {
+  .education-input {
+    width: 85%;
+    margin-right: 5%;
+  }
+
+  .gpa-input {
+    width: 10%;
+  }
+}
+
+.experience-col {
+  .title-input {
+    width: 40%;
+    margin-right: 5%;
+  }
+
+  .company-input {
+    width: 40%;
+    margin-right: 5%;
+  }
+
+  .year-input {
+    width: 10%;
+  }
+}
