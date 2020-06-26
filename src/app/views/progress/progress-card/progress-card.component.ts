@@ -8,9 +8,18 @@ import { AppliedJob } from 'app/class';
   styleUrls: ['./progress-card.component.scss']
 })
 export class ProgressCardComponent implements AfterViewInit {
-  @Input() appliedJob: AppliedJob;
-  @Input() index: number;
-  progressBar: ProgressBar;
+  private _appliedJob: AppliedJob;
+  @Input()
+  public get appliedJob(): AppliedJob { return this._appliedJob; }
+  public set appliedJob(value: AppliedJob) {
+    this.statusText = this._setText(value.progress);
+    this._appliedJob = value;
+  }
+
+  @Input() public index: number;
+
+  public progressBar: ProgressBar;
+  public statusText: string;
 
   constructor() { }
 
@@ -24,23 +33,8 @@ export class ProgressCardComponent implements AfterViewInit {
       easing: 'easeInOut',
       color: this._setColor(this.appliedJob.progress),
       trailColor: '#eee',
-      trailWidth: 1,
-      text: {
-        value: this._setText(this.appliedJob.progress),
-        style: {
-          color: 'black',
-          margin: this._setMargins(this.appliedJob.progress)
-        },
-        aligntoBottom: true
-      }
+      trailWidth: 1
     }).animate(this.appliedJob.progress >= 0 ? this.appliedJob.progress : 1);
-  }
-
-  private _setMargins(progress: -1 | 0 | 0.25 | 0.50 | 0.75 | 1): string {
-    if (progress > 0 && progress < 1) {
-      return '0 40%';
-    }
-    return '0 45%';
   }
 
   private _setText(progress: -1 | 0 | 0.25 | 0.50 | 0.75 | 1): string {

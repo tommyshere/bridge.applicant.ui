@@ -10,6 +10,7 @@ import { HomeModule } from './views/home/home.module';
 import { ApplyModule } from './views/apply/apply.module';
 import { ProgressModule } from './views/progress/progress.module';
 import { TailorModule } from './views/tailor/tailor.module';
+import { ProfileInputModule } from './views/profile-input/profile-input.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { TailorModule } from './views/tailor/tailor.module';
     HomeModule,
     ApplyModule,
     ProgressModule,
-    TailorModule
+    TailorModule,
+    ProfileInputModule
   ],
   bootstrap: [
     AppComponent

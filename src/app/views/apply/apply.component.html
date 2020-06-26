@@ -1,22 +1,13 @@
 <div class="main-content">
   <div class="container-fluid">
     <div class="row">
-      <div class="offset-xl-1 left-col">
-        <app-filter-panel></app-filter-panel>
-      </div>
-      <div class="col-xl-3">
+      <div class="col-xl-3 apply-col">
         <app-apply-card 
           *ngFor="let job of jobs" 
           [job]="job"
           (seeMore)="showMore($event)"
           (hideDetailed)="hideDetailed()">
         </app-apply-card>
-      </div>
-      <div class="right-col">
-        <app-see-more-card
-          *ngIf="showMoreCard"
-          [job]="detailedJob">
-        </app-see-more-card>
       </div>
     </div>
   </div>
